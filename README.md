@@ -44,7 +44,7 @@ MadriBraids/
 
 Installation
 Cloner le dépôt :
-git clone https://github.com/votre-utilisateur/MadriBraids.git
+git clone (https://github.com/asemp055/SEG3525-Devoir2-SiteService.git)
 
 Installer les dépendances :
 npm install
