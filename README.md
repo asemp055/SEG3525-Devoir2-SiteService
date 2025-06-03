@@ -51,7 +51,6 @@ npm install
 
 Lancer le site :
 npm start
-
 Notre Engagement
 Nous concevons pour les cheveux afro, par les cheveux afro – avec des modèles noirs, des tutoriels inclusifs et des options adaptées aux textures 4C.
 
