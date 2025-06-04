@@ -44,14 +44,13 @@ MadriBraids/
 
 Installation
 Cloner le dépôt :
-git clone https://github.com/votre-utilisateur/MadriBraids.git
+git clone (https://github.com/asemp055/SEG3525-Devoir2-SiteService.git)
 
 Installer les dépendances :
 npm install
 
 Lancer le site :
 npm start
-
 Notre Engagement
 Nous concevons pour les cheveux afro, par les cheveux afro – avec des modèles noirs, des tutoriels inclusifs et des options adaptées aux textures 4C.
 
