@@ -1,83 +1,79 @@
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madri Braids - Tresses Africaines</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/Header.css">
-    <link rel="stylesheet" href="styles/home.css">
-    
-</head>
-<body class="body-with-bg">
-    <header id="header"></header>
-    <main class="home-page">
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>L'Art des Tresses Africaines</h1>
-            <p class="subtitle">SALON COMPLET | TRESSES AFRICAINES | SOINS CAPILLAIRES</p>
-            <div class="cta-buttons">
-                <a href="#services" class="btn btn-gold">Nos Services</a>
-                <button class="btn btn-transparent open-booking">Prendre RDV</button>
-            </div>
-        </div>
-    </section>
-</main>
-   
-    
-    <!-- Chargement des scripts JS -->
-    <script src="js/Header.js"></script>
-    <script src="js/home.js"></script>
-    <script src="js/services.js"></script>
-    <script src="js/Team.js"></script>
-    <script src="js/bookingModal.js"></script>
-=======
-<!--
-TEMPLATE HTML (Base commune)
-À vérifier :
-- Balises meta (viewport, charset)
-- Liens vers Bootstrap CSS/JS
-- Div #root pour React
--->
-<!-- index.html – Compatible avec BookingModal, services.js, React & Bootstrap -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Madri Braids - Tresses africaines</title>
+  <title>Madri Braids - Tresses Africaines</title>
 
   <!-- Bootstrap CSS -->
   <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
   />
 
-  <!-- Optional: Favicon -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <!-- Vos fichiers CSS personnalisés -->
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/Header.css" />
+  <link rel="stylesheet" href="styles/home.css" />
 
-  <!-- Optional: AOS CSS (pour animations au scroll plus tard) -->
+  <!-- Optional: AOS CSS -->
   <link
-    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
     rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
   />
 </head>
-<body>
-  <div id="root"></div>
+<body class="body-with-bg">
 
-  <!-- Bootstrap Bundle JS (modal, navbar, etc.) -->
+  <!-- Barre de navigation (chargée dynamiquement) -->
+  <header id="header"></header>
+
+  <!-- Hero Section -->
+  <main class="home-page">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>L'Art des Tresses Africaines</h1>
+        <p class="subtitle">SALON COMPLET | TRESSES AFRICAINES | SOINS CAPILLAIRES</p>
+        <div class="cta-buttons">
+          <a href="#services" class="btn btn-gold">Nos Services</a>
+          <button class="btn btn-transparent open-booking">Prendre RDV</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="container my-5">
+      <h2 class="text-center mb-4">Nos Services</h2>
+      <div id="services-list" class="row"></div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" id="bookingModalContent">
+        <!-- Contenu dynamique injecté par bookingModal.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle JS -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     defer
   ></script>
 
-  <!-- Optional: AOS Animation Script -->
+  <!-- AOS animation -->
   <script
     src="https://unpkg.com/aos@2.3.4/dist/aos.js"
     defer
   ></script>
+
+  <!-- Vos scripts -->
+  <script src="js/Header.js" defer></script>
+  <script src="js/home.js" defer></script>
+  <script src="js/services.js" defer></script>
+  <script src="js/Team.js" defer></script>
+  <script src="js/bookingModal.js" defer></script>
 </body>
 </html>
