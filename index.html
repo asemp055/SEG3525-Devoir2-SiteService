@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madri Braids - Tresses Africaines</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/Header.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/Team.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madri Braids - Tresses Africaines</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  />
+
+  <!-- Vos fichiers CSS personnalisés -->
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/Header.css" />
+  <link rel="stylesheet" href="styles/home.css" />
+
+  <!-- Optional: AOS CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+  />
 </head>
 <body class="body-with-bg">
 
@@ -29,56 +40,22 @@
         </div>
       </div>
     </section>
-    <section id="team" class="team-section">
-        <div class="container">
-            <h2>Notre Équipe d'Expertes</h2>
-            <p class="section-subtitle">Choisissez votre spécialiste pour un service personnalisé</p>
-            <div class="team-grid" id="teamMembers">
-            <!-- Les membres seront injectés par JavaScript -->
-            </div>
-        </div>
+
+    <!-- Section Services -->
+    <section id="services" class="container my-5">
+      <h2 class="text-center mb-4">Nos Services</h2>
+      <div id="services-list" class="row"></div>
     </section>
-</main>
-   
-    
-    <!-- Chargement des scripts JS -->
-    <script src="js/Header.js"></script>
-    <script src="js/home.js"></script>
-    <script src="js/services.js"></script>
-    <script src="js/Team.js"></script>
-    <script src="js/bookingModal.js"></script>
-<!--
-TEMPLATE HTML (Base commune)
-À vérifier :
-- Balises meta (viewport, charset)
-- Liens vers Bootstrap CSS/JS
-- Div #root pour React
--->
-<!-- index.html – Compatible avec BookingModal, services.js, React & Bootstrap -->
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Madri Braids - Tresses africaines</title>
+  </main>
 
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-
-  <!-- Optional: Favicon -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-
-  <!-- Optional: AOS CSS (pour animations au scroll plus tard) -->
-  <link
-    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
-    rel="stylesheet"
-  />
-</head>
-<body>
-  <div id="root"></div>
+  <!-- MODAL -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" id="bookingModalContent">
+        <!-- Contenu dynamique injecté par bookingModal.js -->
+      </div>
+    </div>
+  </div>
 
   <!-- Bootstrap Bundle JS -->
   <script
