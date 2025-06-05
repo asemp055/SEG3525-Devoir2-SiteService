@@ -4,47 +4,38 @@
  * Format : { id, name, price, duration, description }
  */
 
-export const services = [
-  {
-    id: 1,
-    name: "Tresses avec extensions (Box Braids)",
-    price: 120,
-    duration: "3h-5h",
-    description: "Tresses avec extensions synthétiques, longueur moyenne"
-  },
-  {
-    id: 2,
-    name: "Vanilles longues",
-    price: 100,
-    duration: "2h30",
-    description: "Vanilles naturelles pour cheveux longs, avec ou sans rajouts"
-  },
-  {
-    id: 3,
-    name: "Twists courts",
-    price: 90,
-    duration: "2h",
-    description: "Twists protecteurs pour cheveux courts, légers et durables"
-  },
-  {
-    id: 4,
-    name: "Tresses enfants (2 à 10 ans)",
-    price: 60,
-    duration: "1h30",
-    description: "Styles doux et rapides pour enfants, avec perles si souhaité"
-  },
-  {
-    id: 5,
-    name: "Pose de perles et accessoires",
-    price: 20,
-    duration: "30 min",
-    description: "Personnalisation des tresses avec perles colorées et accessoires"
-  },
-  {
-    id: 6,
-    name: "Retrait de tresses + soins",
-    price: 50,
-    duration: "1h30",
-    description: "Retrait en douceur des tresses + soin nourrissant naturel"
-  }
-];
+document.addEventListener('DOMContentLoaded', function() {
+    const servicesSection = document.createElement('section');
+    servicesSection.className = 'services-section';
+    servicesSection.id = 'services';
+
+    servicesSection.innerHTML = `
+        <div class="container">
+            <h2>Nos Services Exclusifs</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="assets/images/box-braids.jpg" alt="Box Braids">
+                    <h3>Tresses Collées</h3>
+                    <p>Box braids, Fulani braids, cornrows et plus. Protection 4-6 semaines.</p>
+                    <p class="price">À partir de 120$</p>
+                </div>
+                
+                <div class="service-card">
+                    <img src="assets/images/vanilles.jpg" alt="Vanilles">
+                    <h3>Vanilles & Twists</h3>
+                    <p>Style doux et naturel pour cheveux texturés. Durée 2-3 semaines.</p>
+                    <p class="price">À partir de 80$</p>
+                </div>
+                
+                <div class="service-card">
+                    <img src="assets/images/accessoires.jpg" alt="Accessoires">
+                    <h3>Pose d'Accessoires</h3>
+                    <p>Perles, cauris et bijoux pour personnaliser vos tresses.</p>
+                    <p class="price">À partir de 15$</p>
+                </div>
+            </div>
+        </div>
+    `;
+
+    document.getElementById('root').appendChild(servicesSection);
+});services.js
