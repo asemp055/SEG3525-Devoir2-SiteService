@@ -1,0 +1,56 @@
+
+.modal-content {
+  border-radius: 20px;
+  background-color: #fffaf4;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  background-color: #6e1414;
+  color: white;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+}
+
+.modal-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+.modal-body {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.modal-footer {
+  border-top: none;
+  justify-content: space-between;
+}
+
+.btn-primary {
+  background-color: #e78a43;
+  border: none;
+  font-weight: bold;
+  padding: 0.6rem 1.4rem;
+}
+
+.btn-primary:hover {
+  background-color: #a33e21;
+}
+
+.btn-secondary {
+  background-color: #ccc;
+  color: #000;
+  border: none;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #4a4a4a;
+}
+
+.form-control, .form-select {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}

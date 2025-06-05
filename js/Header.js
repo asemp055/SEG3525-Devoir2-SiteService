@@ -7,25 +7,22 @@
  * - Style : Couleur foncée, logo centré
  * - Responsive (Bootstrap)
  */
-import React from 'react';
-import { Navbar, Container } from 'react-bootstrap';
-
-const Header = () => {
-  return (
-    <Navbar bg="dark" variant="dark">
-      <Container>
-        <Navbar.Brand href="#home">
-          <img
-            //src="/assets/images/logo.png" // À ajouter dans public/assets/images/
-            width="120"
-            height="40"
-            className="d-inline-block align-top"
-            alt="Madri Braids Logo"
-          />
-        </Navbar.Brand>
-      </Container>
-    </Navbar>
-  );
-};
-
-export default Header;
+-document.addEventListener('DOMContentLoaded', function() {
+    const header = document.createElement('header'); // L'élément HTML doit être en minuscule
+    header.className = 'header'; // La classe CSS en minuscule
+    
+    header.innerHTML = `
+        <nav class="navbar">
+            <div class="logo">Madri Braids</div>
+            <ul class="nav-links">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Équipe</a></li>
+                <li><a href="#about">À PROPOS</a></li>
+                <li><button class="btn-book">Prendre RDV</button></li>
+            </ul>
+        </nav>
+    `;
+    
+    document.getElementById('header').appendChild(header);
+});

@@ -1,0 +1,14 @@
+:root {
+    --gold: #D4AF37;
+    --earth: #8B4513;
+    --burgundy: #800020;
+    --dark-brown: #5D4037;
+    --cream: #FFF8E1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-brown);
+}
