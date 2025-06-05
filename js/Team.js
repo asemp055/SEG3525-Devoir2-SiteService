@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
             bio: "Spécialiste des soins capillaires naturels"
         },
         {
-            name: "Aïssatou",
+            name: "Marie.T",
             specialty: "Dreads & Locs",
-            image: "assets/images/team-aissatou.jpg",
+            image: "assets/images/Marie T.jpg",
             bio: "Artiste certifiée en dreadlocks"
         }
     ];
