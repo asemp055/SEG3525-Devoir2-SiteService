@@ -43,3 +43,35 @@
     color: var(--gold) !important;
     font-size: 1.1rem;
 }
+.service-card .btn-book,
+.service-card .btn-cancel {
+  display: block;
+  width: 80%;
+  margin: 0.5rem auto;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s;
+  font-size: 1rem;
+}
+
+/* Bouton Prendre RDV */
+.service-card .btn-book {
+  background-color: var(--gold);
+  color: black;
+  border: none;
+}
+
+/* Bouton Annuler */
+.service-card .btn-cancel {
+  background-color: transparent;
+  color: var(--burgundy);
+  border: 2px solid var(--gold);
+}
+
+.service-card .btn-cancel:hover {
+  background-color: var(--cream);
+  color: var(--dark-brown);
+}
+
