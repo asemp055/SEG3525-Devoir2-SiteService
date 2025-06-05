@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Création du modal
     const modal = document.createElement('div');
     modal.className = 'booking-modal';
@@ -37,6 +37,16 @@ document.addEventListener('DOMContentLoaded', function() {
                         <option value="16:00">4:00 PM</option>
                     </select>
                 </div>
+
+                <div class="form-group">
+                    <label for="coiffeuse">Coiffeuse :</label>
+                    <select id="coiffeuse" required>
+                        <option value="">Choisissez votre coiffeuse</option>
+                        <option value="Marie Haby">Marie Haby</option>
+                        <option value="Adriane">Adriane</option>
+                        <option value="Marie.T">Marie.T</option>
+                    </select>
+                </div>
                 
                 <button type="submit" class="btn-submit">Confirmer la Réservation</button>
             </form>
@@ -45,19 +55,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.body.appendChild(modal);
 
-    // Gestion des événements
-    document.querySelector('.btn-book').addEventListener('click', function() {
-        modal.style.display = 'block';
+    // Affichage du modal
+    document.querySelectorAll('.open-booking, .btn-book').forEach(button => {
+        button.addEventListener('click', function () {
+            modal.style.display = 'block';
+        });
     });
 
-    document.querySelector('.close-btn').addEventListener('click', function() {
+    // Fermeture du modal
+    modal.querySelector('.close-btn').addEventListener('click', function () {
         modal.style.display = 'none';
     });
 
     // Soumission du formulaire
-    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+    document.getElementById('bookingForm').addEventListener('submit', function (e) {
         e.preventDefault();
-        alert('Réservation confirmée! Nous vous contacterons pour confirmation.');
+
+        const service = document.getElementById('serviceType').value;
+        const date = document.getElementById('appointmentDate').value;
+        const time = document.getElementById('appointmentTime').value;
+        const coiffeuse = document.getElementById('coiffeuse').value;
+
+        alert(
+          `🎉 Réservation confirmée !\n\n✅ Service : ${service}\n📅 Date : ${date}\n🕒 Heure : ${time}\n💇🏽‍♀️ Coiffeuse : ${coiffeuse}`
+        );
+
         modal.style.display = 'none';
+        this.reset();
     });
-}); bookingModal.js
+});
